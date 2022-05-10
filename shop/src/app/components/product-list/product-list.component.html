@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-head"><h5>Hoa tốt nghiệp</h5></div>
+  <div class="card-body">
+    <table class="table">
+      <tbody>
+        <td *ngFor="let product of products">
+          <ul scope="row">{{product.name}}</ul>
+          <ul>{{product.price}}</ul>
+          <ul><a [routerLink]="['/productdetail/'+ product.name]">Edit</a></ul>
+      </td>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card-head"><h5>Hoa cưới</h5></div>
+  <div class="card-body">
+    <table class="table">
+      <tbody>
+        <td *ngFor="let product of products">
+          <ul scope="row">{{product.name}}</ul>
+          <ul>{{product.price}}</ul>
+          <ul><a [routerLink]="['/productdetail/'+ product.name]">Edit</a></ul>
+      </td>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card-head"><h5>Hoa 8/3</h5></div>
+  <div class="card-body">
+    <table class="table">
+      <tbody>
+        <td *ngFor="let product of products">
+          <ul scope="row">{{product.name}}</ul>
+          <ul>{{product.price}}</ul>
+          <ul><a [routerLink]="['/productdetail/'+ product.name]">Edit</a></ul>
+      </td>
+      </tbody>
+    </table>
+  </div>
+</div>
